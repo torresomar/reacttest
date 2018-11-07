@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File upload example</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" rel="script" src="js/scripts.js" defer></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script type="text/jsx" rel="script" src="js/myfileupload.js"></script>
+</head>
+<body>
+
+<div class="content">
+    <div>
+        <h1>File upload without react (but with multer)</h1>
+
+        <form id="multer-form" enctype="multipart/form-data">
+            Select an image to upload:
+            <input type="file" name="image" name="image">
+            <input type="submit" name="upload-btn" value="Upload Image">
+        </form>
+        <div id="multer-result">
+
+        </div>
+
+    </div>
+    <div>
+        <h1>File upload with React</h1>
+        <div id="react-container">
+
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
