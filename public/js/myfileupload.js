@@ -22,12 +22,12 @@ class Basic extends React.Component {
         return (
             <section>
                 <div className="dropzone">
-                    <Dropzone
+                    <DropZone
                         onDrop={this.onDrop.bind(this)}
                         onFileDialogCancel={this.onCancel.bind(this)}
                     >
                         <p>Try dropping some files here, or click to select files to upload.</p>
-                    </Dropzone>
+                    </DropZone>
                 </div>
                 <aside>
                     <h2>Dropped files</h2>
